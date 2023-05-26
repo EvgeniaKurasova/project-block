@@ -1,7 +1,8 @@
+import './Header.scss'
 type Props = {}
 const Header = (props: Props) => {
   return (
-    <div>Header</div>
+    <div className='red'>Header</div>
   )
 }
 export default Header
