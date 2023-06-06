@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+}
+.HeaderMenuBlock{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+}
+.HeaderMenu{
+    list-style: none;
+    display: flex;
+    width: 440px;
+    height: 48px;
+    padding-left: 0px;
+}
+.HeaderMenuItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 48px;
+    color: white;
+    cursor: pointer;
+}
+.header-arrow-down{
+    width: 18px;
+    height: 18px;
+}
+.subMenu{
+    display: none;
+    position: absolute;
+    bottom: -40px;
+    right: 515px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 15px 30px #4b506930;
+    width: 280px;
+    height: 285px;
+    padding: 25px 40px;
+    z-index: 15;
+}
+.HeaderMenuItemArrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.HeaderMenuItemArrow:hover{
+.subMenu{
+    display: block;
+}
+}
+.HeaderMenuItem:hover{
+.line{
+    content: '';
+    height: 5px;
+    width: 110px;
+    background-color: #76BC4C;
+    transition: 0.3s;
+    transform: scaleX(1);
+    z-index: 15;
+}
+}
+.line{
+    content: '';
+    height: 5px;
+    width: 110px;
+    background-color: #76BC4C;
+    transition: 0.3s;
+    transform: scaleX(0);
+    z-index: 15;
+}
+
+.dropMenu{
+    color: #2e3039;
+    list-style: none;
+    letter-spacing: 0.5px;
+}
