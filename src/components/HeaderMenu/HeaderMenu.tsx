@@ -11,7 +11,7 @@ const HeaderMenu = (props: Props) => {
                     Home
                     <div className="line"></div>
                 </li>
-                <li className="HeaderMenuItem">
+                <li className="HeaderMenuItem HeaderMenuItemDrop">
                     <div className="HeaderMenuItemArrow">
                         <a href="#"></a>
                         Categories
