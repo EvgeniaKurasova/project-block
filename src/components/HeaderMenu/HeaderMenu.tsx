@@ -1,9 +1,12 @@
 import './HeaderMenu.css'
-//import headerArrowDown from 'images/arrow_down.png'
+import React from 'react'
+// import headerArrowDown from 'images/arrow_down.png'
 
-type Props = {}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface Props {}
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const HeaderMenu = (props: Props) => {
-    return (
+  return (
         <div className="HeaderMenuBlock">
             <ul className="HeaderMenu">
                 <li className="HeaderMenuItem">
@@ -40,8 +43,8 @@ const HeaderMenu = (props: Props) => {
                 </li>
             </ul>
         </div>
-    )
+  )
 }
 export default HeaderMenu
 
-/*<div className='greenLine'></div>*/
+/* <div className='greenLine'></div> */
