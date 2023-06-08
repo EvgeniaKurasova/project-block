@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import './LatestPosts.scss'
+import React from 'react'
 
-type Props = {}
+interface Props {}
 const LatestPosts = (props: Props) => {
   return (
     <div className='latestPostsBlock'>

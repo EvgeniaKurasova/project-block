@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import './LinePath.scss'
+import React from 'react'
 
-type Props = {}
+interface Props {}
 const LinePath = (props: Props) => {
   return (
     <div className="elementor-shape elementor-shape-bottom" data-negative="false">

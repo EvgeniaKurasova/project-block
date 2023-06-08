@@ -1,12 +1,14 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import { Container } from '@mui/material'
 import logo from 'assets/logo.png'
 import HeaderMenu from 'components/HeaderMenu/HeaderMenu'
 import './Header.scss'
+import React from 'react'
 
-
-type Props = {}
+interface Props {}
 const Header = (props: Props) => {
-    return (
+  return (
         <header className='header'>
             <div className="header-block">
                 <Container maxWidth="md">
@@ -18,6 +20,6 @@ const Header = (props: Props) => {
             </div>
             <div className="slider"></div>
         </header>
-    )
+  )
 }
 export default Header

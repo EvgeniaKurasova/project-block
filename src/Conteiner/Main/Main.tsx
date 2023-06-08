@@ -1,9 +1,12 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import { Container } from '@mui/material'
 import './Main.scss'
 import LinePath from 'components/LInePath/LinePath'
 import LatestPosts from 'components/LatestPosts/LatestPosts'
+import React from 'react'
 
-type Props = {}
+interface Props {}
 const Main = (props: Props) => {
   return (
     <main className='main'>
