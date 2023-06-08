@@ -7,15 +7,15 @@ const HeaderMenu = (props: Props) => {
         <div className="HeaderMenuBlock">
             <ul className="HeaderMenu">
                 <li className="HeaderMenuItem">
-                    <a href="#"></a>
-                    Home
+                    <a href="/">Home </a>
+
                     <div className="line"></div>
                 </li>
                 <li className="HeaderMenuItem HeaderMenuItemDrop">
                     <div className="HeaderMenuItemArrow">
-                        <a href="#"></a>
-                        Categories
+                        <a href="/">Categories</a>
                         <img
+                            alt="arror_down"
                             className="header-arrow-down"
                             src="images/arrow_down.png"
                         />
@@ -31,13 +31,11 @@ const HeaderMenu = (props: Props) => {
                     </ul>
                 </li>
                 <li className="HeaderMenuItem">
-                    <a href="#"></a>
-                    About us
+                    <a href="/">About us</a>
                     <div className="line"></div>
                 </li>
                 <li className="HeaderMenuItem">
-                    <a href="#"></a>
-                    Contacts
+                    <a href="/">Contacts</a>
                     <div className="line"></div>
                 </li>
             </ul>
