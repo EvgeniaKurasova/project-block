@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+.greenElemBlock{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 18px;
+}
+.longGreen{
+    width: 29px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #76BC4C;
+}
+.shortGreen{
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #76BC4C;   
+}

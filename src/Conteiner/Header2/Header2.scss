@@ -61,10 +61,26 @@
 .hamburger{
     width: 30px;
     height: 30px;
+    margin-right: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 8px;
+    box-sizing: content-box !important;
+    transition: 0.3s;
+    z-index: 5;
+}
+.hamburger:hover{
+    .hamburger-line{
+        display: block;
+        width: 30px;
+        height: 2px;
+        overflow: hidden;
+        background-color: white;
+        transform: translateX(-100%);
+        transition: ease 300ms;
+        transform: translateX(0);
+    }
 }
 .hamburger-line{
     display: block;
@@ -72,4 +88,5 @@
     height: 2px;
     overflow: hidden;
     background-color: white;
+    transition: ease 300ms;
 }
