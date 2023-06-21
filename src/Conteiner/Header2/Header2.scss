@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+.header2{
+    background-color: black;
+    height: 68px;
+    max-width: 1440px;
+    width: 100%;
+}
+.header2block{
+    display: flex;
+}
+.logo2-img{
+    width: 170px;
+    height: auto;
+}
+.header2-menu-ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 0px;
+}
+.header2-logo-block{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 68px;
+}
+.header2-menu-block{
+    width: 50%;
+    padding: 10px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header2-menu-item{
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    font-family: Jost,sans-serif;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.header2-menu-item-drop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app-bar-part{
+    width: 25%;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.hamburger{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+.hamburger-line{
+    display: block;
+    width: 30px;
+    height: 2px;
+    overflow: hidden;
+    background-color: white;
+}

@@ -1,5 +1,6 @@
 import './HeaderMenu.css'
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 // import headerArrowDown from 'images/arrow_down.png'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
@@ -38,7 +39,9 @@ const HeaderMenu = (props: Props) => {
                     <div className="line"></div>
                 </li>
                 <li className="HeaderMenuItem">
-                    <a href="/">Contacts</a>
+                    <NavLink to={'/contacts'}>
+                    Contacts
+                    </NavLink>
                     <div className="line"></div>
                 </li>
             </ul>
@@ -46,5 +49,3 @@ const HeaderMenu = (props: Props) => {
   )
 }
 export default HeaderMenu
-
-/* <div className='greenLine'></div> */

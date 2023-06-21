@@ -1,16 +1,19 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import CssBaseline from '@mui/material/CssBaseline'
-import Header from 'Conteiner/Header/Header'
 import { StyledEngineProvider } from '@mui/material/styles'
-import Main from 'Conteiner/Main/Main'
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import ContactsPage from 'pages/ContactsPage/ContactsPage'
+import Home from 'pages/Home/Home'
 
 const App = () => {
   return (
         <StyledEngineProvider injectFirst>
         <CssBaseline>
-        <Header />
-        <Main/>
+        <Routes>
+             <Route path='/' element={<Home />} />
+             <Route path='/contacts' element={<ContactsPage />} />
+        </Routes>
         </CssBaseline>
         </StyledEngineProvider>
   )
