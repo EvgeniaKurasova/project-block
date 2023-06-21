@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import './LatestPosts.scss'
 import React from 'react'
+import Grid from 'components/Grid/Grid'
 
 interface Props {}
 const LatestPosts = (props: Props) => {
@@ -14,6 +15,7 @@ const LatestPosts = (props: Props) => {
         <div className='shortGreen'></div>
         <div className='shortGreen'></div>
       </div>
+      <Grid />
       <div className="blockReceips">
 
       </div>

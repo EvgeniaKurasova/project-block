@@ -4,10 +4,11 @@
 
 .latestPostsBlock{
     width: 100%;
-    height: 1114px;
+    height: 2000px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 150px;
 }
 .latestPostsBlockTitle{
     font-family: 'Libre Baskerville', serif;
@@ -22,6 +23,7 @@
 .greenElemBlock{
     display: flex;
     gap: 5px;
+    margin-bottom: 18px;
 }
 .longGreen{
     width: 29px;
