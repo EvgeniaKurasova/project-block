@@ -10,13 +10,13 @@ const HeaderMenu = (props: Props) => {
   return (
         <div className="HeaderMenuBlock">
             <ul className="HeaderMenu">
-                <li className="HeaderMenuItem">
+                <li className="header-menu-item">
                     <a href="/">Home </a>
 
                     <div className="line"></div>
                 </li>
-                <li className="HeaderMenuItem HeaderMenuItemDrop">
-                    <div className="HeaderMenuItemArrow">
+                <li className="header-menu-item header-menu-item-drop">
+                    <div className="header-menu-item-arrow">
                     <NavLink to={'/categories'}>
                         Categories
                     </NavLink>
@@ -28,19 +28,21 @@ const HeaderMenu = (props: Props) => {
                     </div>
                     <div className="line"></div>
                     <ul className="subMenu">
-                        <li className="dropMenu">Fast food</li>
-                        <li className="dropMenu">Drinks</li>
-                        <li className="dropMenu">Salads</li>
-                        <li className="dropMenu">Appetizer</li>
-                        <li className="dropMenu">Chicken</li>
-                        <li className="dropMenu">Pizza</li>
+                        <li className="drop-menu-item">Fast food</li>
+                        <li className="drop-menu-item">Drinks</li>
+                        <li className="drop-menu-item">Salads</li>
+                        <li className="drop-menu-item">Appetizer</li>
+                        <li className="drop-menu-item">Chicken</li>
+                        <li className="drop-menu-item">Pizza</li>
                     </ul>
                 </li>
-                <li className="HeaderMenuItem">
-                    <a href="/">About us</a>
+                <li className="header-menu-item">
+                <NavLink to={'/about-us'}>
+                    About us
+                </NavLink>
                     <div className="line"></div>
                 </li>
-                <li className="HeaderMenuItem">
+                <li className="header-menu-item">
                     <NavLink to={'/contacts'}>
                     Contacts
                     </NavLink>
