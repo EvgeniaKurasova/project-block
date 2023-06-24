@@ -43,12 +43,9 @@ const FooterVarTwo = (props: Props) => {
             </div>
             <div className='footer-block-item'>
                 <h2>Get Every Newsletter</h2>
-                <p className='font-family: 'Libre Baskerville', sans-serif;
-    letter-spacing: 1.4px;
-    font-weight: 700;
-    font-size: 1.1rem;'>Enter Email here to be updated. We promise not to send you spam!</p>
-                <input placeholder="Email"className='foter-maim-input'/>
-                <Button className='foter-maim-button'></Button>
+                <p className='footer-p'>Enter Email here to be updated. We promise not to send you spam!</p>
+                <input placeholder="Email"className='footer-mail-input'/>
+                <Button className='footer-mail-button'>Subscribe</Button>
             </div>
         </div>
         </Container>

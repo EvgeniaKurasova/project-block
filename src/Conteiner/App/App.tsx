@@ -5,6 +5,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import ContactsPage from 'pages/ContactsPage/ContactsPage'
 import Home from 'pages/Home/Home'
+import CategoriesPage from 'pages/CategoriesPage/CategoriesPage'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
              <Route path='/' element={<Home />} />
              <Route path='/contacts' element={<ContactsPage />} />
+             <Route path='/categories' element={<CategoriesPage />} />
         </Routes>
         </CssBaseline>
         </StyledEngineProvider>

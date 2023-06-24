@@ -1,4 +1,4 @@
-import './HeaderMenu.css'
+import './HeaderMenu.scss'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 // import headerArrowDown from 'images/arrow_down.png'
@@ -17,7 +17,9 @@ const HeaderMenu = (props: Props) => {
                 </li>
                 <li className="HeaderMenuItem HeaderMenuItemDrop">
                     <div className="HeaderMenuItemArrow">
-                        <a href="/">Categories</a>
+                    <NavLink to={'/categories'}>
+                        Categories
+                    </NavLink>
                         <img
                             alt="arror_down"
                             className="header-arrow-down"
