@@ -10,7 +10,10 @@ const CategoriesPage = (props: Props) => {
   return (
     <div>
       <Header2 />
-      <CategoriesList/>
+      <div className='categories-all-content'>
+      <CategoriesList />
+      <div className='categories-aside-content'></div>
+      </div>
     </div>
   )
 }
