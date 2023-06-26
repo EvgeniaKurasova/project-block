@@ -4,6 +4,8 @@ import React from 'react'
 import { Container } from '@mui/material'
 import logo2 from 'assets/logo2.png'
 import './Header2.scss'
+import { NavLink } from 'react-router-dom'
+
 interface Props {}
 
 const Header2 = (props: Props) => {
@@ -31,7 +33,10 @@ const Header2 = (props: Props) => {
                         <li className="header2-menu-item">About Us</li>
                     </ul>
                     </div>
-                    <div className='app-bar-part'>
+                    <div className='side-bar-part'>
+                        <NavLink to={'/liked'}>
+                            <img src='images/like-white.png' className='img-like'/>
+                        </NavLink>
                         <div className='hamburger'>
                         <div className='hamburger-line'></div>
                         <div className='hamburger-line'></div>

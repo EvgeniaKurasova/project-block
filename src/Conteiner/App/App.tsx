@@ -7,6 +7,7 @@ import ContactsPage from 'pages/ContactsPage/ContactsPage'
 import Home from 'pages/Home/Home'
 import CategoriesPage from 'pages/CategoriesPage/CategoriesPage'
 import AboutUsPage from 'pages/AboutUsPage/AboutUsPage'
+import ArticlePage from 'pages/ArticlePage/ArticlePage'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
              <Route path='/contacts' element={<ContactsPage />} />
              <Route path='/categories' element={<CategoriesPage />} />
              <Route path='/about-us' element={<AboutUsPage />} />
+             <Route path='/liked' element={<ArticlePage />} />
         </Routes>
         </CssBaseline>
         </StyledEngineProvider>

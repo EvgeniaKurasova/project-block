@@ -51,10 +51,11 @@
     align-items: center;
     justify-content: center;
 }
-.app-bar-part{
+.side-bar-part{
     width: 25%;
     height: 68px;
     display: flex;
+    gap: 18px;
     align-items: center;
     justify-content: right;
 }
@@ -89,4 +90,8 @@
     overflow: hidden;
     background-color: white;
     transition: ease 300ms;
+}
+.img-like{
+    width: 30px;
+    height: 30px;
 }
