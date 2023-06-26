@@ -20,7 +20,9 @@ const CategoriesList = (props: Props) => {
                 buttonTitle={categoria.buttonTitle}
                 title={categoria.title}
                 author={categoria.author}
-                data={categoria.data}/>
+                data={categoria.data}
+                imgCategoria={categoria.imgCategoria}
+                buttonColor={categoria.buttonColor}/>
             </Grid>
         ))}
     </Grid>
