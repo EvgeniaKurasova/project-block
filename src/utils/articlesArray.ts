@@ -7,6 +7,21 @@ interface Article {
   img: string
   categoria: string
   buttonColor: string
+  // bigImgPage: string
+  // pRecipe: string
+  // citationP: string
+  // citationImg: string
+  // nutritionalInformation: string
+  // coockingInformation: string
+  // coockingInformationImg: string
+  // ingredients: []
+  // instructionsPhotoOne: string
+  // instructionsPhotoTwo: string
+  // instructionsText: string
+  // notes: string
+  // notesPhotoOne: string
+  // notesPhotoTwo: string
+  // notesPhotoThree: string
 }
 const articlesArray: Article[] = [
   {
