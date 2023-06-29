@@ -3,6 +3,7 @@
 import React from 'react'
 import Header from 'Conteiner/Header/Header'
 import Main from 'Conteiner/Main/Main'
+import FooterVarOne from 'components/FooterVarOne/FooterVarOne'
 
 interface Props {}
 
@@ -11,6 +12,7 @@ const Home = (props: Props) => {
     <div>
         <Header />
         <Main/>
+        <FooterVarOne/>
     </div>
   )
 }

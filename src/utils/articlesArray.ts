@@ -1,5 +1,6 @@
 
 interface Article {
+  // id: number
   buttonTitle: string
   title: string
   author: string

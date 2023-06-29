@@ -8,6 +8,8 @@ interface Categoria {
   buttonColor: string
 }
 
+// window.globalStorage = {}
+
 const categoriesArray: Categoria[] = [
   {
     buttonTitle: 'fast food',
