@@ -1,5 +1,6 @@
 
 interface Categoria {
+  id: number
   buttonTitle: string
   title: string
   author: string
@@ -8,10 +9,9 @@ interface Categoria {
   buttonColor: string
 }
 
-// window.globalStorage = {}
-
 const categoriesArray: Categoria[] = [
   {
+    id: 1,
     buttonTitle: 'fast food',
     title: 'Fast food',
     author: 'Laura Nikova',
@@ -20,6 +20,7 @@ const categoriesArray: Categoria[] = [
     buttonColor: 'green'
   },
   {
+    id: 2,
     buttonTitle: 'drinks',
     title: 'Drinks',
     author: 'Laura Nikova',
@@ -28,6 +29,7 @@ const categoriesArray: Categoria[] = [
     buttonColor: 'blue'
   },
   {
+    id: 3,
     buttonTitle: 'breakfast',
     title: 'Breakfast',
     author: 'Laura Nikova',
@@ -36,6 +38,7 @@ const categoriesArray: Categoria[] = [
     buttonColor: 'orange'
   },
   {
+    id: 4,
     buttonTitle: 'appetizer',
     title: 'Appetizer',
     author: 'Laura Nikova',
@@ -44,6 +47,7 @@ const categoriesArray: Categoria[] = [
     buttonColor: 'green'
   },
   {
+    id: 5,
     buttonTitle: 'deserts',
     title: 'Deserts',
     author: 'Laura Nikova',
@@ -52,6 +56,7 @@ const categoriesArray: Categoria[] = [
     buttonColor: 'pink'
   },
   {
+    id: 6,
     buttonTitle: 'pizza',
     title: 'Pizza',
     author: 'Laura Nikova',

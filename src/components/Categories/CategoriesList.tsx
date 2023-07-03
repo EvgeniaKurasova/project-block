@@ -14,9 +14,10 @@ const CategoriesList = (props: Props) => {
     <Typography component='h2' variant='h3'>Categories List</Typography>
     <Grid container spacing={3} className='categories-list'>
         {categoriesArray.map((categoria) => (
-            // eslint-disable-next-line react/jsx-key
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} key={categoria.id}>
                 <CategoriesListItem
+                key={categoria.id}
+                id={categoria.id}
                 buttonTitle={categoria.buttonTitle}
                 title={categoria.title}
                 author={categoria.author}

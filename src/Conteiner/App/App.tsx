@@ -8,6 +8,7 @@ import Home from 'pages/Home/Home'
 import CategoriesPage from 'pages/CategoriesPage/CategoriesPage'
 import AboutUsPage from 'pages/AboutUsPage/AboutUsPage'
 import ArticlePage from 'pages/ArticlePage/ArticlePage'
+import ArticlesPage from 'pages/ArticlesPage/ArticlesPage'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
              <Route path='/categories' element={<CategoriesPage />} />
              <Route path='/about-us' element={<AboutUsPage />} />
              <Route path='/liked' element={<ArticlePage />} />
+             <Route path='/categories/:title' element={<ArticlesPage />} />
         </Routes>
         </CssBaseline>
         </StyledEngineProvider>
