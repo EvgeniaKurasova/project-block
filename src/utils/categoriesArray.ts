@@ -1,5 +1,4 @@
-
-interface Categoria {
+interface Category {
   id: number
   buttonTitle: string
   title: string
@@ -9,7 +8,7 @@ interface Categoria {
   buttonColor: string
 }
 
-const categoriesArray: Categoria[] = [
+const categoriesArray: Category[] = [
   {
     id: 1,
     buttonTitle: 'fast food',
@@ -66,4 +65,4 @@ const categoriesArray: Categoria[] = [
   }
 ]
 
-export default categoriesArray
+export { type Category, categoriesArray }

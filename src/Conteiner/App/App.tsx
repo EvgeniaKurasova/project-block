@@ -20,7 +20,7 @@ const App = () => {
              <Route path='/categories' element={<CategoriesPage />} />
              <Route path='/about-us' element={<AboutUsPage />} />
              <Route path='/liked' element={<ArticlePage />} />
-             <Route path='/categories/:title' element={<ArticlesPage />} />
+             <Route path='/categories/:id' element={<ArticlesPage />} />
         </Routes>
         </CssBaseline>
         </StyledEngineProvider>

@@ -22,15 +22,20 @@ const Header2 = (props: Props) => {
                     </div>
                     <div className="header2-menu-block">
                     <ul className="header2-menu-ul">
-                        <li className="header2-menu-item">Home</li>
+                        <li className="header2-menu-item">
+                            <NavLink to={'/'}>Home</NavLink></li>
                         <li className="header2-menu-item header2-menu-item-drop">Categories
                         <img
                             alt="arror_down"
                             className="header-arrow-down"
                             src="images/arrow_down.png"
                         /></li>
-                        <li className="header2-menu-item">Contact</li>
-                        <li className="header2-menu-item">About Us</li>
+                        <li className="header2-menu-item">
+                        <NavLink to={'/contacts'}>Contact</NavLink>
+                        </li>
+                        <li className="header2-menu-item">
+                        <NavLink to={'/about_us'}>About Us</NavLink>
+                        </li>
                     </ul>
                     </div>
                     <div className='side-bar-part'>

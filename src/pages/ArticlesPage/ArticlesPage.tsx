@@ -7,26 +7,38 @@ import './ArticlesPage.scss'
 import React from 'react'
 import Header2 from 'Conteiner/Header2/Header2'
 // import articlesArray, { getArticlesObject, Article } from 'utils/articlesArray'
-import articlesArray, { getArticlesObject } from 'utils/articlesArray'
+import articlesArray from 'utils/articlesArray'
+import { type Category, categoriesArray } from 'utils/categoriesArray'
+import ArticlesListItem from 'components/ArticlesComponents/ArticlesListItem/ArticlesListItem'
 
-interface Props {
-  // eslint-disable-next-line @typescript-eslint/consistent-indexed-object-style
-  articlesObject?: {
-    [title: string]: any
-  }
-}
-const ArticlesPage = ({
-  articlesObject = getArticlesObject(articlesArray)
-}: Props) => {
-  const { title } = useParams()
-  console.log(title)
-  console.log(articlesObject)
-  console.log(articlesArray)
+const ArticlesPage = () => {
+  const { id } = useParams() as { id: string }
+  const category: Category = categoriesArray.find(
+    (category) => {
+      return category.id === +id
+    }
+  ) as Category
+
+  const articlesFromCategory = articlesArray.filter((article) => article.categoryId === category.id)
 
   return (
     <div>
       <Header2/>
-      <div>p</div>
+      <div>
+        {articlesFromCategory.map((article) => {
+          return (
+            <ArticlesListItem
+              key={article.id}
+              id={article.id}
+              buttonTitle={article.buttonTitle}
+              title={article.title}
+              author={article.author}
+              data={article.data}
+              categoryId={article.categoryId}
+              buttonColor={article.buttonColor}/>
+          )
+        })}
+    </div>
     </div>
   )
 }

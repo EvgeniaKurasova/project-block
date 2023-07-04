@@ -15,7 +15,7 @@ const Header = (props: Props) => {
                     <div className="logo">
                         <img src={logo} alt="blog-logo" className="logo-img" />
                     </div>
-                    <HeaderMenu />
+                    <HeaderMenu/>
                 </Container>
             </div>
             <div className="slider"></div>

@@ -4,7 +4,7 @@ import './CategoriesList.scss'
 import React from 'react'
 import { Typography, Grid } from '@mui/material'
 import CategoriesListItem from './CategoriesListItem'
-import categoriesArray from 'utils/categoriesArray'
+import { categoriesArray } from 'utils/categoriesArray'
 
 interface Props {}
 
@@ -13,17 +13,9 @@ const CategoriesList = (props: Props) => {
     <>
     <Typography component='h2' variant='h3'>Categories List</Typography>
     <Grid container spacing={3} className='categories-list'>
-        {categoriesArray.map((categoria) => (
-            <Grid item xs={12} md={6} key={categoria.id}>
-                <CategoriesListItem
-                key={categoria.id}
-                id={categoria.id}
-                buttonTitle={categoria.buttonTitle}
-                title={categoria.title}
-                author={categoria.author}
-                data={categoria.data}
-                imgCategoria={categoria.imgCategoria}
-                buttonColor={categoria.buttonColor}/>
+        {categoriesArray.map((category) => (
+            <Grid item xs={12} md={6} key={category.id}>
+                <CategoriesListItem category={category}/>
             </Grid>
         ))}
     </Grid>

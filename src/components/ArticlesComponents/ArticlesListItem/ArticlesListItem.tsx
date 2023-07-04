@@ -3,6 +3,7 @@
 import './ArticlesListItem.scss'
 import React from 'react'
 import { Card, CardContent, Button } from '@mui/material'
+import { type Category, categoriesArray } from 'utils/categoriesArray'
 // import { Link } from 'react-router-dom'
 
 interface Props {
@@ -11,13 +12,18 @@ interface Props {
   title: string
   author: string
   data: string
-  categoria: string
+  categoryId: number
   buttonColor: string
 }
 
-const ArticlesListItem = ({ id, buttonTitle, title, author, data, categoria, buttonColor }: Props) => {
+const ArticlesListItem = ({ id, buttonTitle, title, author, data, categoryId, buttonColor }: Props) => {
+  const category: Category = categoriesArray.find(
+    (category) => {
+      return category.id === categoryId
+    }
+  ) as Category
   return (
-    <Card className={`${categoria}`} variant="outlined" key={id}>
+    <Card className={`${category.title}`} variant="outlined" key={id}>
       <CardContent className="categoria-card-content">
         <Button className={`${buttonColor}`}>
             {buttonTitle}

@@ -10,7 +10,7 @@ interface Props {}
 const Home = (props: Props) => {
   return (
     <div>
-        <Header />
+        <Header/>
         <Main/>
         <FooterVarOne/>
     </div>

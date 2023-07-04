@@ -7,7 +7,7 @@ interface Article {
   author: string
   data: string
   img: string
-  categoria: string
+  categoryId: number
   buttonColor: string
   // bigImgPage: string
   // pRecipe: string
@@ -33,7 +33,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'drinks',
+    categoryId: 4,
     buttonColor: 'blue'
   },
   {
@@ -43,7 +43,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'deserts',
+    categoryId: 5,
     buttonColor: 'pink'
   },
   {
@@ -53,17 +53,17 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'deserts',
+    categoryId: 5,
     buttonColor: 'pink'
   },
   {
-    id: 4,
+    id: 1,
     buttonTitle: 'fast food',
     title: 'Whole Wheat Burger Buns Without Yeast',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'fast food',
+    categoryId: 1,
     buttonColor: 'green'
   },
   {
@@ -73,7 +73,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'deserts',
+    categoryId: 5,
     buttonColor: 'pink'
   },
   {
@@ -83,7 +83,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'fast food',
+    categoryId: 1,
     buttonColor: 'green'
   },
   {
@@ -93,7 +93,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'fast food',
+    categoryId: 1,
     buttonColor: 'green'
   },
   {
@@ -103,7 +103,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'appetizer',
+    categoryId: 2,
     buttonColor: 'orange'
   },
   {
@@ -113,7 +113,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'appetizer',
+    categoryId: 2,
     buttonColor: 'orange'
   },
   {
@@ -123,7 +123,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'breakfast',
+    categoryId: 3,
     buttonColor: 'green'
   },
   {
@@ -133,7 +133,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'appetizer',
+    categoryId: 2,
     buttonColor: 'orange'
   },
   {
@@ -143,7 +143,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'breakfast',
+    categoryId: 3,
     buttonColor: 'green'
   },
   {
@@ -153,7 +153,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'breakfast',
+    categoryId: 3,
     buttonColor: 'green'
   },
   {
@@ -163,7 +163,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'drinks',
+    categoryId: 4,
     buttonColor: 'blue'
   },
   {
@@ -173,7 +173,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'drinks',
+    categoryId: 4,
     buttonColor: 'blue'
   },
   {
@@ -183,7 +183,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'pizza',
+    categoryId: 6,
     buttonColor: 'orange'
   },
   {
@@ -193,7 +193,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'pizza',
+    categoryId: 6,
     buttonColor: 'orange'
   },
   {
@@ -203,7 +203,7 @@ const articlesArray: Article[] = [
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img7.jpg',
-    categoria: 'pizza',
+    categoryId: 6,
     buttonColor: 'orange'
   }
 ]

@@ -22,7 +22,7 @@ const ArticlesList = (props: Props) => {
             title={articles.title}
             author={articles.author}
             data={articles.data}
-            categoria={articles.categoria}
+            categoryId={articles.categoryId}
             buttonColor={articles.buttonColor}/>
       </Grid>
       ))}

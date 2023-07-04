@@ -1,10 +1,14 @@
 import './HeaderMenu.scss'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+// import { type Category } from 'utils/categoriesArray'
+// import { categoriesArray } from 'utils/categoriesArray'
 // import headerArrowDown from 'images/arrow_down.png'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface Props {}
+interface Props {
+//  category: Category
+}
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const HeaderMenu = (props: Props) => {
   return (
@@ -28,16 +32,26 @@ const HeaderMenu = (props: Props) => {
                     </div>
                     <div className="line"></div>
                     <ul className="subMenu">
-                        <li className="drop-menu-item">Fast food</li>
-                        <li className="drop-menu-item">Drinks</li>
-                        <li className="drop-menu-item">Salads</li>
-                        <li className="drop-menu-item">Appetizer</li>
-                        <li className="drop-menu-item">Chicken</li>
-                        <li className="drop-menu-item">Pizza</li>
+                    {/* {categoriesArray.map((category) => (
+                    <li className="drop-menu-item" key={category.id}>
+                    <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
+                    ))} */}
+                        {/* <li className="drop-menu-item">
+                        <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
+                        <li className="drop-menu-item">
+                        <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
+                        <li className="drop-menu-item">
+                        <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
+                        <li className="drop-menu-item">
+                        <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
+                        <li className="drop-menu-item">
+                        <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
+                        <li className="drop-menu-item">
+                        <Link to={`/categories/${category.id}`}>{category.title}</Link></li> */}
                     </ul>
                 </li>
                 <li className="header-menu-item">
-                <NavLink to={'/about-us'}>
+                <NavLink to={'/about_us'}>
                     About us
                 </NavLink>
                     <div className="line"></div>
