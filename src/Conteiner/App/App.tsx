@@ -21,6 +21,7 @@ const App = () => {
              <Route path='/about-us' element={<AboutUsPage />} />
              <Route path='/liked' element={<ArticlePage />} />
              <Route path='/categories/:id' element={<ArticlesPage />} />
+             <Route path='/article/:id' element={<ArticlePage />} />
         </Routes>
         </CssBaseline>
         </StyledEngineProvider>

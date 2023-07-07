@@ -4,7 +4,7 @@ import './ArticlesListItem.scss'
 import React from 'react'
 import { Card, CardContent, Button } from '@mui/material'
 import { type Category, categoriesArray } from 'utils/categoriesArray'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 interface Props {
   id: number
@@ -28,7 +28,11 @@ const ArticlesListItem = ({ id, buttonTitle, title, author, data, categoryId, bu
         <Button className={`${buttonColor}`}>
             {buttonTitle}
         </Button>
-        <h1 className="title-categories">{title}</h1>
+        <h1 className="title-categories">
+          <Link to={`/article/${id}`}>
+          {title}
+          </Link>
+        </h1>
         <ul className="down-block-about">
         <li className="athor-categories test-d-none">
         {author}

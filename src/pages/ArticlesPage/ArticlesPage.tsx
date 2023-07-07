@@ -7,9 +7,9 @@ import './ArticlesPage.scss'
 import React from 'react'
 import Header2 from 'Conteiner/Header2/Header2'
 // import articlesArray, { getArticlesObject, Article } from 'utils/articlesArray'
-import articlesArray from 'utils/articlesArray'
 import { type Category, categoriesArray } from 'utils/categoriesArray'
 import ArticlesListItem from 'components/ArticlesComponents/ArticlesListItem/ArticlesListItem'
+import { articlesArray } from 'utils/articlesArray'
 
 const ArticlesPage = () => {
   const { id } = useParams() as { id: string }
@@ -19,7 +19,7 @@ const ArticlesPage = () => {
     }
   ) as Category
 
-  const articlesFromCategory = articlesArray.filter((article) => article.categoryId === category.id)
+  const articlesFromCategory = articlesArray.filter((article: any) => article.categoryId === category.id)
 
   return (
     <div>

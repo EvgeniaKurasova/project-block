@@ -9,21 +9,25 @@ interface Article {
   img: string
   categoryId: number
   buttonColor: string
-  // bigImgPage: string
-  // pRecipe: string
-  // citationP: string
-  // citationImg: string
-  // nutritionalInformation: string
-  // coockingInformation: string
-  // coockingInformationImg: string
-  // ingredients: []
-  // instructionsPhotoOne: string
-  // instructionsPhotoTwo: string
-  // instructionsText: string
-  // notes: string
-  // notesPhotoOne: string
-  // notesPhotoTwo: string
-  // notesPhotoThree: string
+  bigImgPage: string
+  pRecipe: string
+  citationP: string
+  citationAuthor: string
+  citationImg: string
+  coockingInformationTitle: string
+  coockingInformationP: string
+  nutritionalInformation: string
+  coockingInformation: string
+  coockingInformationImg: string
+  ingredients: []
+  instructionsPhotoOne: string
+  instructionsPhotoTwo: string
+  instructionsText: string
+  notes: string
+  notesPhoto: string
+  notesPhotoOne: string
+  notesPhotoTwo: string
+  notesPhotoThree: string
 }
 const articlesArray: Article[] = [
   {
@@ -32,9 +36,28 @@ const articlesArray: Article[] = [
     title: 'Pure lemon Lemonade Juice with Paper',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img18.jpg',
     categoryId: 4,
-    buttonColor: 'blue'
+    buttonColor: 'blue',
+    bigImgPage: 'images/img18.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 2,
@@ -42,9 +65,28 @@ const articlesArray: Article[] = [
     title: 'Gluten Free Orange Biscotti Recipe',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img14.jpg',
     categoryId: 5,
-    buttonColor: 'pink'
+    buttonColor: 'pink',
+    bigImgPage: 'images/img14.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 3,
@@ -52,9 +94,28 @@ const articlesArray: Article[] = [
     title: 'Chia Pudding with Blueberries and Almonds',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img13.jpg',
     categoryId: 5,
-    buttonColor: 'pink'
+    buttonColor: 'pink',
+    bigImgPage: 'images/img13.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 1,
@@ -62,9 +123,28 @@ const articlesArray: Article[] = [
     title: 'Whole Wheat Burger Buns Without Yeast',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img10.jpg',
     categoryId: 1,
-    buttonColor: 'green'
+    buttonColor: 'green',
+    bigImgPage: 'images/img10.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 5,
@@ -72,9 +152,28 @@ const articlesArray: Article[] = [
     title: 'Strawberry Croissants With Puff Pasty',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img6.jpg',
     categoryId: 5,
-    buttonColor: 'pink'
+    buttonColor: 'pink',
+    bigImgPage: 'images/img6.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 6,
@@ -82,9 +181,28 @@ const articlesArray: Article[] = [
     title: 'Baked Sweet Potato Fries With Sauce',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img9.jpg',
     categoryId: 1,
-    buttonColor: 'green'
+    buttonColor: 'green',
+    bigImgPage: 'images/img9.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 7,
@@ -92,9 +210,28 @@ const articlesArray: Article[] = [
     title: 'Garlic Butter Grilled Steak & Shrimp',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img4.jpg',
     categoryId: 1,
-    buttonColor: 'green'
+    buttonColor: 'green',
+    bigImgPage: 'images/img4.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 8,
@@ -102,9 +239,28 @@ const articlesArray: Article[] = [
     title: 'Blackberry Cake With cream Cheese',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img3.jpg',
     categoryId: 2,
-    buttonColor: 'orange'
+    buttonColor: 'orange',
+    bigImgPage: 'images/img3.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 9,
@@ -112,19 +268,57 @@ const articlesArray: Article[] = [
     title: 'Best Avocado Toast Recipe With Egg',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img8.jpg',
     categoryId: 2,
-    buttonColor: 'orange'
+    buttonColor: 'orange',
+    bigImgPage: 'images/img8.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 10,
     buttonTitle: 'breakfast',
-    title: '12 Healthy Breakfasts for a Fresh Start',
+    title: '<div className="articles-page-title">12 Healthy Breakfasts for a Fresh Start</div>',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img0.jpg',
     categoryId: 3,
-    buttonColor: 'green'
+    buttonColor: 'green',
+    bigImgPage: 'images/img0.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 11,
@@ -132,9 +326,28 @@ const articlesArray: Article[] = [
     title: 'Chocolate Mint Dessert Brownies Recipe',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img11.jpg',
     categoryId: 2,
-    buttonColor: 'orange'
+    buttonColor: 'orange',
+    bigImgPage: 'images/img11.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 12,
@@ -142,9 +355,28 @@ const articlesArray: Article[] = [
     title: '11 Tips For Baking The Perfect Fruit Cake',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img2.jpg',
     categoryId: 3,
-    buttonColor: 'green'
+    buttonColor: 'green',
+    bigImgPage: 'images/img2.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 13,
@@ -152,9 +384,28 @@ const articlesArray: Article[] = [
     title: 'Pot Beef Brisket With Onion Soup Mix',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img1.jpg',
     categoryId: 3,
-    buttonColor: 'green'
+    buttonColor: 'green',
+    bigImgPage: 'images/img1.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 14,
@@ -162,9 +413,28 @@ const articlesArray: Article[] = [
     title: 'Healthy Yogurt Recipes For Breakfast',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img16.jpg',
     categoryId: 4,
-    buttonColor: 'blue'
+    buttonColor: 'blue',
+    bigImgPage: 'images/img16.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 15,
@@ -172,9 +442,28 @@ const articlesArray: Article[] = [
     title: 'Grilled Octopus, Olive Oil And Gremolata',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img15.jpg',
     categoryId: 4,
-    buttonColor: 'blue'
+    buttonColor: 'blue',
+    bigImgPage: 'images/img15.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 16,
@@ -182,9 +471,28 @@ const articlesArray: Article[] = [
     title: 'Supreme Vegatarian Pizza With Mozzarella',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img12.jpg',
     categoryId: 6,
-    buttonColor: 'orange'
+    buttonColor: 'orange',
+    bigImgPage: 'images/img12.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 17,
@@ -192,9 +500,28 @@ const articlesArray: Article[] = [
     title: '30 Minute Sweet Thai Chili Peanut Chicken',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img5.jpg',
     categoryId: 6,
-    buttonColor: 'orange'
+    buttonColor: 'orange',
+    bigImgPage: 'images/img5.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   },
   {
     id: 18,
@@ -202,13 +529,32 @@ const articlesArray: Article[] = [
     title: 'Tuna Avocado Salad With Mayo',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    img: 'images/img7.jpg',
+    img: 'images/img17.jpg',
     categoryId: 6,
-    buttonColor: 'orange'
+    buttonColor: 'orange',
+    bigImgPage: 'images/img17.jpg',
+    pRecipe: '<p className="p-recipe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>',
+    citationP: '<div>Eating is so intimate. It’s very sensual. When you invite someone to sit at your table and you want to cook for them, you’re inviting a person into your life.</div>',
+    citationAuthor: '<div>Maya Angelou</div>',
+    citationImg: '<img src="images/img-author.png"/>',
+    nutritionalInformation: 'string',
+    coockingInformation: 'string',
+    coockingInformationTitle: '<div>30 Minute Sweet Thai Chili Peanut Chicken And Grilled Pineapple Stir Fry</div>',
+    coockingInformationP: '<div>I love a good stir fry, but I especially love them in the summer. This is mostly because it’s what my dad used to make us in the summertime when I was a kid. Nights where pretty hot and humid living on the lake in Ohio, so oftentimes my dad would just throw a bunch of veggies in a skillet, add some chicken and soy sauce and call it a stir fry. Of course there would be rice and cashews for topping because that’s just how this family does it, but the point is, stir fry was always my favorite.</div>',
+    coockingInformationImg: '<img src="images/img-author.png"/>',
+    ingredients: [],
+    instructionsPhotoOne: 'string',
+    instructionsPhotoTwo: 'string',
+    instructionsText: 'string',
+    notes: '<div>Few dishes are as beloved as a golden roast chicken. It’s hard to go wrong with the basic method, but there are some recipes that rise above the rest, yielding a delicious bird that is crisp-skinned and tender-fleshed without any more work. Here’s our guide to get you there.</div>',
+    notesPhoto: '<img src="images/img-author.png"/>',
+    notesPhotoOne: 'string',
+    notesPhotoTwo: 'string',
+    notesPhotoThree: 'string'
   }
 ]
 
-export const getArticlesObject = (array: Article[]) =>
+const getArticlesObject = (array: Article[]) =>
   array.reduce(
     (object, article) => ({
       ...object,
@@ -217,4 +563,4 @@ export const getArticlesObject = (array: Article[]) =>
     {}
   )
 
-export default articlesArray
+export { getArticlesObject, type Article, articlesArray }

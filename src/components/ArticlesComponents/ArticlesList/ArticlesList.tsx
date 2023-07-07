@@ -4,8 +4,8 @@ import './ArticlesList.scss'
 import React from 'react'
 import { Grid } from '@mui/material'
 // import { Link } from 'react-router-dom'
-import articlesArray from 'utils/articlesArray'
 import ArticlesListItem from '../ArticlesListItem/ArticlesListItem'
+import { articlesArray } from 'utils/articlesArray'
 
 interface Props {}
 
