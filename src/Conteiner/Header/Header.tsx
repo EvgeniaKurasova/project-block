@@ -5,7 +5,7 @@ import logo from 'assets/logo.png'
 import HeaderMenu from 'components/HeaderMenu/HeaderMenu'
 import './Header.scss'
 import React from 'react'
-// import Sswiper from 'components/Swiper/Swiper'
+import Swiper from 'components/Swiper/Swiper'
 
 interface Props {}
 const Header = (props: Props) => {
@@ -17,7 +17,7 @@ const Header = (props: Props) => {
                         <img src={logo} alt="blog-logo" className="logo-img" />
                     </div>
                     <HeaderMenu/>
-                    {/* <Sswiper/> */}
+                    <Swiper/>
                 </Container>
             </div>
             <div className="slider"></div>

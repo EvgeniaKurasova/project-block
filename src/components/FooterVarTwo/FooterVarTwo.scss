@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .footer-var-two{
     max-width: 1440px;
     width: 100%;
@@ -18,10 +21,19 @@
     padding: 10px;
     text-align: center;
 }
-.footer-img{
-    width: 100px;
+.footer-img-bord{
+    width: 155px;
     height: 100px;
     border-radius: 5px;
+    overflow: hidden;
+}
+.footer-img{
+    width: 115px;
+    height: 115px;
+    transition: 0.5s;
+}
+.footer-img:hover{
+    transform: scale(1.2);
 }
 .footer-post-item{
     display: flex;

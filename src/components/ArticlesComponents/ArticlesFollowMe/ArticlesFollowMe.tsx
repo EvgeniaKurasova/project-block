@@ -2,21 +2,22 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import { Button } from '@mui/material'
 import React from 'react'
+import './ArticlesFollowMe.scss'
 
 interface Props {}
 const ArticlesFollowMe = (props: Props) => {
   return (
-    <div>
-      <img/>
+    <div className='articles-follow-me'>
+      <img className='articles-follow-me-img' src='/images/app-bar-photo.png'/>
       <div>
-        <div>
-            <div>
-                <div>written by</div>
-                <h2>Laura Nikova</h2>
+        <div className='articles-follow-me-big-block-name'>
+            <div className='articles-follow-me-small-block-name'>
+                <div className='articles-follow-me-written-by'>written by</div>
+                <h2 className='title-of-page-article-block'>Laura Nikova</h2>
             </div>
-            <Button>Follow Me</Button>
+            <Button className='articles-follow-me-button'>Follow Me</Button>
         </div>
-        <p></p>
+        <p className='articles-follow-me-p'>I’m Laura, a classically trained chef whose first culinary love is cooking for my family and second is helping you cook for yours</p>
       </div>
     </div>
   )

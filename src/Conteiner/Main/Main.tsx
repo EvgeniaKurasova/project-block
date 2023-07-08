@@ -18,7 +18,6 @@ const Main = (props: Props) => {
                 </Container>
             </div>
             <div className="black-line">
-
             </div>
             <div className="main-block-categories">
             <Container maxWidth="md">

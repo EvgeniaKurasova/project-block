@@ -1,48 +1,40 @@
-/* eslint-disable @typescript-eslint/no-empty-interface */
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
-// /* eslint-disable @typescript-eslint/no-empty-interface */
-// import { Navigation, Pagination, Scrollbar } from 'swiper/modules'
-// import React from 'react'
-// import { Swiper, SwiperSlide } from 'swiper/react'
-
-// import 'swiper/css'
-// import 'swiper/css/pagination'
-// // import required modules
-
-// export default function App () {
-//   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-//   // const swiperRef = useRef() as React.RefObject<any>
-//   return (
-//     <Swiper
-//     modules={[Pagination, Navigation, Scrollbar]}
-//     className="mySwiper"
-//     slidesPerView={4}
-//     spaceBetween={30}
-//     pagination={{
-//       clickable: true
-//     }}
-//   >
-//     <SwiperSlide>Slide 1</SwiperSlide>
-//     <SwiperSlide>Slide 2</SwiperSlide>
-//     <SwiperSlide>Slide 3</SwiperSlide>
-//     <SwiperSlide>Slide 4</SwiperSlide>
-//     <SwiperSlide>Slide 5</SwiperSlide>
-//     <SwiperSlide>Slide 6</SwiperSlide>
-//     <SwiperSlide>Slide 7</SwiperSlide>
-//     <SwiperSlide>Slide 8</SwiperSlide>
-//     <SwiperSlide>Slide 9</SwiperSlide>
-//   </Swiper>
-//   )
-// }
-// export default Sswiper
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
-/* eslint-disable @typescript-eslint/no-empty-interface */
 import React from 'react'
+import Slider from 'react-slick'
 
-interface Props {}
-const Sswiper = (props: Props) => {
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
+const Swiper = function (): any {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+
   return (
-    <div className="elementor-shape elementor-shape-bottom" data-negative="false"></div>
+        <Slider {...settings}>
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+        </Slider>
   )
 }
-export default Sswiper
+
+export default Swiper

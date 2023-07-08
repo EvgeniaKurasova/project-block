@@ -1,22 +1,22 @@
 import './HeaderMenu.scss'
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import { categoriesArray } from 'utils/categoriesArray'
 // import { type Category } from 'utils/categoriesArray'
 // import { categoriesArray } from 'utils/categoriesArray'
 // import headerArrowDown from 'images/arrow_down.png'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface Props {
-//  category: Category
-}
+interface Props {}
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const HeaderMenu = (props: Props) => {
   return (
         <div className="HeaderMenuBlock">
             <ul className="HeaderMenu">
                 <li className="header-menu-item">
-                    <a href="/">Home </a>
-
+                <NavLink to={'/'}>
+                    Home
+                </NavLink>
                     <div className="line"></div>
                 </li>
                 <li className="header-menu-item header-menu-item-drop">
@@ -32,22 +32,12 @@ const HeaderMenu = (props: Props) => {
                     </div>
                     <div className="line"></div>
                     <ul className="subMenu">
-                    {/* {categoriesArray.map((category) => (
-                    <li className="drop-menu-item" key={category.id}>
-                    <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
-                    ))} */}
-                        {/* <li className="drop-menu-item">
-                        <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
-                        <li className="drop-menu-item">
-                        <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
-                        <li className="drop-menu-item">
-                        <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
-                        <li className="drop-menu-item">
-                        <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
-                        <li className="drop-menu-item">
-                        <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
-                        <li className="drop-menu-item">
-                        <Link to={`/categories/${category.id}`}>{category.title}</Link></li> */}
+                    {
+                        categoriesArray.map((category) => (
+                            <li className="drop-menu-item" key={category.id}>
+                            <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
+                        ))
+                    }
                     </ul>
                 </li>
                 <li className="header-menu-item">

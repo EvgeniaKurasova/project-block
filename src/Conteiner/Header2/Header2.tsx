@@ -3,8 +3,9 @@
 import React from 'react'
 import { Container } from '@mui/material'
 import logo2 from 'assets/logo2.png'
+import { categoriesArray } from 'utils/categoriesArray'
 import './Header2.scss'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 interface Props {}
 
@@ -24,12 +25,21 @@ const Header2 = (props: Props) => {
                     <ul className="header2-menu-ul">
                         <li className="header2-menu-item">
                             <NavLink to={'/'}>Home</NavLink></li>
-                        <li className="header2-menu-item header2-menu-item-drop">Categories
+                        <li className="header2-menu-item header2-menu-item-drop">
+                        <NavLink to={'/categories'}>Categories</NavLink>
                         <img
                             alt="arror_down"
                             className="header-arrow-down"
-                            src="images/arrow_down.png"
-                        /></li>
+                            src="/images/arrow_down.png"
+                        />
+                        <ul className="subMenu">
+                    {
+                        categoriesArray.map((category) => (
+                            <li className="drop-menu-item" key={category.id}>
+                            <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
+                        ))
+                    }
+                    </ul></li>
                         <li className="header2-menu-item">
                         <NavLink to={'/contacts'}>Contact</NavLink>
                         </li>
@@ -40,7 +50,7 @@ const Header2 = (props: Props) => {
                     </div>
                     <div className='side-bar-part'>
                         <NavLink to={'/liked'}>
-                            <img src='images/like-white.png' className='img-like'/>
+                            <img src='/images/like-white.png' className='img-like'/>
                         </NavLink>
                         <div className='hamburger'>
                         <div className='hamburger-line'></div>

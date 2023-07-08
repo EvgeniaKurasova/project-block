@@ -21,6 +21,8 @@ const ArticlesPage = () => {
 
   const articlesFromCategory = articlesArray.filter((article: any) => article.categoryId === category.id)
 
+  console.log(category.id)
+
   return (
     <div>
       <Header2/>
@@ -30,12 +32,12 @@ const ArticlesPage = () => {
             <ArticlesListItem
               key={article.id}
               id={article.id}
-              buttonTitle={article.buttonTitle}
+              buttonTitle={category.buttonTitle}
               title={article.title}
               author={article.author}
               data={article.data}
               categoryId={article.categoryId}
-              buttonColor={article.buttonColor}/>
+              buttonColor={category.buttonColor}/>
           )
         })}
     </div>

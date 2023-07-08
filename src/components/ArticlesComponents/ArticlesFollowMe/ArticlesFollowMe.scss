@@ -1,0 +1,45 @@
+.articles-follow-me-big-block-name{
+    display: flex;
+    justify-content: space-between;
+}
+.articles-follow-me-p{
+    font-family: Jost, sans-serif;
+    line-height: 1.8;
+    color: #4b5767;
+    letter-spacing: 0.5px;
+}
+.articles-follow-me-written-by{
+    color: #4b5767;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+.articles-follow-me-button{
+    font-family: Jost, sans-serif;
+    width: 95px;
+    height: 32px;
+    font-size: 0.8rem;
+    padding: 6px 15px;
+    border-radius: 50px;
+    color: white;
+    line-height: 1.6;
+    font-weight: 500;
+    background-color: #76BC4C;
+    text-transform: none;
+}
+.articles-follow-me{
+    border-bottom: 1px solid #dfe1ea;
+    padding: 50px 0px;
+}
+.articles-follow-me-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 6px 20px #38394457;
+}
+.articles-follow-me{
+    display: flex;
+    gap: 40px;
+    padding: 50px 0px;
+    margin: 0px 100px;
+}
