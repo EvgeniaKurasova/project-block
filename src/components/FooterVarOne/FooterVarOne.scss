@@ -76,8 +76,14 @@
     width: 28.5px;
     height: 28px;
     line-height: 1;
-    box-shadow: 3px 3px 0 #ffffff10, 4px 2px 0 #00000020;
+    filter: drop-shadow( 4px 2px 0 #00000020);
     padding: 4px;
+    transition: 0.4s;
+}
+.footer-social-button:hover{
+    .footer-social-img{
+        transform: translateY(-4px);
+    }
 }
 .footer-social-text{
     margin-top: 10px;

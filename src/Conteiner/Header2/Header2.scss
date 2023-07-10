@@ -120,6 +120,55 @@
 .subMenu{
     transform: translateX(0);
 }
-.drop-menu-item{
-    text-align: start;
+.span{
+    transform: translateX(0);
+}
+.drop-menu-item:hover{
+    transform: translateX(15px);
+}
+// .start-green-line::before{
+//     content: '';
+//     position: absolute;
+//     top: 50%;
+//     height: 0.1em;
+//     width: 0;
+//     background: currentColor;
+//     transition: 0.25s;
+//     left: -5px;
+//     margin: 0px;
+//     top: 15px;
+// }
+// .drop-menu-item:hover{
+//     .start-green-line::before{
+//         transition: 0.25s;
+//         width: 0.8em;
+//     }
+// }
+// .drop-menu-item::before{
+//     content: '';
+//     position: absolute;
+//     top: 50%;
+//     height: 0.1em;
+//     width: 0;
+//     background: currentColor;
+//     transition: 0.25s;
+//     left: -5px;
+//     margin: 0px;
+//     top: 15px;
+// }
+.drop-menu-item::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 0.1em;
+    width: 0;
+    background: currentColor;
+    transition: 0.25s;
+    left: -5px;
+    margin: 0px;
+    top: 15px;
+}
+.drop-menu-item:hover::before{
+    transition: 0.25s;
+    width: 0.8em;
 }

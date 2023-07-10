@@ -16,7 +16,7 @@ const CategoriesListItem = ({ category }: Props) => {
         <Button className={`${category.buttonColor}`}>
             {category.buttonTitle}
         </Button>
-        <h1 className="title-categories"><Link to={`/categories/${category.id}`}>{category.title}</Link></h1>
+        <h1 className="title-categories"><Link to={`/categories/${category.id}`} className='menu-link'>{category.title}</Link></h1>
         <ul className="down-block-about">
         <li className="athor-categories test-d-none">
         {category.author}

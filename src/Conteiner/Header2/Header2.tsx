@@ -35,8 +35,8 @@ const Header2 = (props: Props) => {
                         <ul className="subMenu">
                     {
                         categoriesArray.map((category) => (
-                            <li className="drop-menu-item" key={category.id}>
-                            <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
+                            <li className="drop-menu-item start-green-line" key={category.id}><div className='span'></div>
+                            <Link to={`/categories/${category.id}`} className='k'>{category.title}</Link></li>
                         ))
                     }
                     </ul></li>
