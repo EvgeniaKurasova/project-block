@@ -17,10 +17,9 @@ const Header = (props: Props) => {
                         <img src={logo} alt="blog-logo" className="logo-img" />
                     </div>
                     <HeaderMenu/>
-                    <Swiper/>
                 </Container>
             </div>
-            <div className="slider"></div>
+            <Swiper/>
         </header>
   )
 }

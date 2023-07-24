@@ -5,6 +5,7 @@
     max-width: 1440px;
     width: 100%;
     height: 600px;
+    position: relative;
 }
 .header-block{
     padding-top: 30px;
@@ -13,6 +14,7 @@
     height: 198px;
     background-color: #20252BB3;
     z-index: 1;
+    position: absolute;
 }
 .logo{
     display: flex;

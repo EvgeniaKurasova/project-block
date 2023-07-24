@@ -56,11 +56,11 @@ const categoriesArray: Category[] = [
   },
   {
     id: 6,
-    buttonTitle: 'pizza',
-    title: 'Pizza',
+    buttonTitle: 'lunch',
+    title: 'Lunch',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
-    imgCategoria: 'pizza',
+    imgCategoria: 'lunch',
     buttonColor: 'orange'
   }
 ]

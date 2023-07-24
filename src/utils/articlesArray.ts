@@ -467,7 +467,7 @@ const articlesArray: Article[] = [
   },
   {
     id: 16,
-    buttonTitle: 'pizza',
+    buttonTitle: 'lunch',
     title: 'Supreme Vegatarian Pizza With Mozzarella',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
@@ -496,7 +496,7 @@ const articlesArray: Article[] = [
   },
   {
     id: 17,
-    buttonTitle: 'pizza',
+    buttonTitle: 'lunch',
     title: '30 Minute Sweet Thai Chili Peanut Chicken',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
@@ -525,7 +525,7 @@ const articlesArray: Article[] = [
   },
   {
     id: 18,
-    buttonTitle: 'pizza',
+    buttonTitle: 'lunch',
     title: 'Tuna Avocado Salad With Mayo',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
