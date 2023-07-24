@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import './CategoriesList.scss'
 import React from 'react'
-import { Typography, Grid } from '@mui/material'
+import { Grid } from '@mui/material'
 import CategoriesListItem from './CategoriesListItem'
 import { categoriesArray } from 'utils/categoriesArray'
 
@@ -11,7 +11,6 @@ interface Props {}
 const CategoriesList = (props: Props) => {
   return (
     <>
-    <Typography component='h2' variant='h3'>Categories List</Typography>
     <Grid container spacing={3} className='categories-list'>
         {categoriesArray.map((category) => (
             <Grid item xs={12} md={6} key={category.id}>

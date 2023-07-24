@@ -25,6 +25,7 @@ const ArticlesListItem = ({ id, buttonTitle, title, author, data, categoryId, bu
   return (
     <Card className={`${category.title}`} variant="outlined" key={id}>
       <CardContent className="categoria-card-content">
+        <img src='images/'/>
         <Button className={`${buttonColor}`}>
             {buttonTitle}
         </Button>
