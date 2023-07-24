@@ -5,7 +5,6 @@ import ContactChefPart from 'components/ContactChefPart/ContactChefPart'
 import ContactSubmit from 'components/ContactSubmit/ContactSubmit'
 import FooterVarTwo from 'components/FooterVarTwo/FooterVarTwo'
 
-// import headerArrowDown from 'images/arrow_down.png'
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Props {}
 

@@ -52,6 +52,12 @@ const HeaderMenu = (props: Props) => {
                     </NavLink>
                     <div className="line"></div>
                 </li>
+                <li className="header-menu-item">
+                    <NavLink to={'/liked_articles'}>
+                    Liked
+                    </NavLink>
+                    <div className="line"></div>
+                </li>
             </ul>
         </div>
   )

@@ -9,6 +9,7 @@ import CategoriesPage from 'pages/CategoriesPage/CategoriesPage'
 import AboutUsPage from 'pages/AboutUsPage/AboutUsPage'
 import ArticlePage from 'pages/ArticlePage/ArticlePage'
 import ArticlesPage from 'pages/ArticlesPage/ArticlesPage'
+import LikePage from 'pages/LikePage/LikePage'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
              <Route path='/liked' element={<ArticlePage />} />
              <Route path='/categories/:id' element={<ArticlesPage />} />
              <Route path='/article/:id' element={<ArticlePage />} />
+             <Route path='/liked_articles' element={<LikePage />} />
         </Routes>
         </CssBaseline>
         </StyledEngineProvider>

@@ -49,7 +49,7 @@ const Header2 = (props: Props) => {
                     </ul>
                     </div>
                     <div className='side-bar-part'>
-                        <NavLink to={'/liked'}>
+                        <NavLink to={'/liked_articles'}>
                             <img src='/images/like-white.png' className='img-like'/>
                         </NavLink>
                         <div className='hamburger'>
