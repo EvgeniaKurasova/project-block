@@ -10,6 +10,7 @@ import { Container } from '@mui/material'
 import ArticlesShare from 'components/ArticlesComponents/ArticlesShare/ArticlesShare'
 import ArticlesPrev from 'components/ArticlesComponents/ArticlesPrev/ArticlesPrev'
 import ArticlesFollowMe from 'components/ArticlesComponents/ArticlesFollowMe/ArticlesFollowMe'
+import Reviews from 'components/Reviews/Reviews'
 
 interface Props {
   articlesObject?: {
@@ -63,7 +64,8 @@ const ArticlePage = ({
       </div>
       <ArticlesShare/>
       <ArticlesFollowMe/>
-      <ArticlesPrev/>
+      <ArticlesPrev articleId={articlesObject[parseInt(productId)].id}/>
+      <Reviews articleId={articlesObject[parseInt(productId)].id}/>
       </Container>
     </div>
   )
