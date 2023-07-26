@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-empty-interface */
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import './ArticlesListItem.scss'
@@ -14,23 +15,28 @@ interface Props {
   data: string
   categoryId: number
   buttonColor: string
+  bigImgPage: string
 }
 
-const ArticlesListItem = ({ id, buttonTitle, title, author, data, categoryId, buttonColor }: Props) => {
+const ArticlesListItem = ({ id, buttonTitle, title, author, data, categoryId, buttonColor, bigImgPage }: Props) => {
   const category: Category = categoriesArray.find(
     (category) => {
       return category.id === categoryId
     }
   ) as Category
   return (
-    <Card className={`${category.title}`} variant="outlined" key={id}>
-      <CardContent className="categoria-card-content">
-        <img src='images/'/>
+    <Card className='card-article-item' variant="outlined" key={id}>
+      <CardContent className="article-card-content">
+        <div className='card-article-img-bord'>
+        <img className='card-article-img' src={`${bigImgPage}`}/>
+        </div>
+        <div className='card-article-text-bord'>
+          <img className='card-article-like' src='..//images/like.png'/>
         <Button className={`${buttonColor}`}>
             {buttonTitle}
         </Button>
-        <h1 className="title-categories">
-          <Link to={`/article/${id}`}>
+        <h1 className="title-article">
+          <Link className="title-article" to={`/article/${id}`}>
           {title}
           </Link>
         </h1>
@@ -40,6 +46,7 @@ const ArticlesListItem = ({ id, buttonTitle, title, author, data, categoryId, bu
         </li>
         <li className="data-categories">{data}</li>
         </ul>
+        </div>
       </CardContent>
     </Card>
   )

@@ -10,7 +10,8 @@ import Header2 from 'Conteiner/Header2/Header2'
 import { type Category, categoriesArray } from 'utils/categoriesArray'
 import ArticlesListItem from 'components/ArticlesComponents/ArticlesListItem/ArticlesListItem'
 import { articlesArray } from 'utils/articlesArray'
-import { Card } from '@mui/material'
+import { Card, Grid, Container } from '@mui/material'
+import FooterVarTwo from 'components/FooterVarTwo/FooterVarTwo'
 
 const ArticlesPage = () => {
   const { id } = useParams() as { id: string }
@@ -27,14 +28,17 @@ const ArticlesPage = () => {
   return (
     <div>
       <Header2/>
+      <Container className='container'>
       <Card className='categories-title-block'>
           <h3 className='categories-title-block-name'>{category.title}</h3>
           <div className='categories-title-block-black-line'></div>
           <p className='categories-title-block-p'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
       </Card>
       <div>
+      <Grid container spacing={3} className='categories-list'>
         {articlesFromCategory.map((article) => {
           return (
+            <Grid item xs={12} md={6} key={article.id}>
             <ArticlesListItem
               key={article.id}
               id={article.id}
@@ -43,10 +47,15 @@ const ArticlesPage = () => {
               author={article.author}
               data={article.data}
               categoryId={article.categoryId}
-              buttonColor={category.buttonColor}/>
+              buttonColor={category.buttonColor}
+              bigImgPage={article.bigImgPage}/>
+              </Grid>
           )
         })}
+        </Grid>
     </div>
+    </Container>
+    <FooterVarTwo/>
     </div>
   )
 }

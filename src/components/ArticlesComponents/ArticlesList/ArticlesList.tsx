@@ -16,6 +16,7 @@ const ArticlesList = (props: Props) => {
       {articlesArray.map((articles) => (
         <Grid item xs={12} md={6} key={articles.id}>
           <ArticlesListItem
+            bigImgPage={articles.bigImgPage}
             key={articles.id}
             id={articles.id}
             buttonTitle={articles.buttonTitle}

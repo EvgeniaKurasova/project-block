@@ -5,6 +5,7 @@ import React from 'react'
 import CategoriesList from 'components/Categories/CategoriesList'
 import Header2 from 'Conteiner/Header2/Header2'
 import { Card, Container } from '@mui/material'
+import FooterVarTwo from 'components/FooterVarTwo/FooterVarTwo'
 
 interface Props {}
 const CategoriesPage = (props: Props) => {
@@ -22,6 +23,7 @@ const CategoriesPage = (props: Props) => {
       <div className='categories-aside-content'></div>
       </div>
       </Container>
+      <FooterVarTwo/>
     </div>
   )
 }

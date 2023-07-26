@@ -39,6 +39,7 @@
     font-family: Libre Baskerville, sans-serif;
     font-weight: 700;
     line-height: 1.4;
+    word-break: break-word;
 }
 .a-line::before{
     content: '';
@@ -65,8 +66,10 @@
 }
 .article-block-p-n-main{
     display: flex;
-    gap: 15px;
 }
 .article-block-p-n{
     margin: 0px 100px;
+}
+.p-n-button-item-hov-text{
+    width: 180px;
 }

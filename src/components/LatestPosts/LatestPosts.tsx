@@ -9,7 +9,7 @@ interface Props {}
 const LatestPosts = (props: Props) => {
   return (
     <div className='latestPostsBlock'>
-      <h2 className='blockTitle'>Latest Posts</h2>
+      <h2 className='block-title-h2'>Latest Posts</h2>
       <GreenLineDecor/>
       <Grid />
       <div className="blockReceips">
