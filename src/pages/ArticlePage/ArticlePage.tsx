@@ -11,6 +11,7 @@ import ArticlesShare from 'components/ArticlesComponents/ArticlesShare/ArticlesS
 import ArticlesPrev from 'components/ArticlesComponents/ArticlesPrev/ArticlesPrev'
 import ArticlesFollowMe from 'components/ArticlesComponents/ArticlesFollowMe/ArticlesFollowMe'
 import Reviews from 'components/Reviews/Reviews'
+import FooterVarTwo from 'components/FooterVarTwo/FooterVarTwo'
 
 interface Props {
   articlesObject?: {
@@ -64,9 +65,13 @@ const ArticlePage = ({
       </div>
       <ArticlesShare/>
       <ArticlesFollowMe/>
-      <ArticlesPrev articleId={articlesObject[parseInt(productId)].id}/>
+      <ArticlesPrev
+      articleId={articlesObject[parseInt(productId)].id}
+      articleTitle={articlesObject[parseInt(productId)].title}
+      articleBigImg={articlesObject[parseInt(productId)].bigImgPage}/>
       <Reviews articleId={articlesObject[parseInt(productId)].id}/>
       </Container>
+      <FooterVarTwo/>
     </div>
   )
 }

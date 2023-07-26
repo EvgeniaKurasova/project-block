@@ -294,7 +294,7 @@ const articlesArray: Article[] = [
   {
     id: 10,
     buttonTitle: 'breakfast',
-    title: '<div className="articles-page-title">12 Healthy Breakfasts for a Fresh Start</div>',
+    title: '12 Healthy Breakfasts for a Fresh Start',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img0.jpg',

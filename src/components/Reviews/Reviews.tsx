@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable @typescript-eslint/no-empty-interface */
-// import './LinePath.scss'
+import './Reviews.scss'
 import { Button, TextField, Typography } from '@mui/material'
 import React, { useState, useEffect, useRef } from 'react'
 import { type Review, reviewsArray } from 'utils/reviewsArray'
@@ -24,7 +24,7 @@ const Reviews = ({ articleId }: Props) => {
     setText('')
   }
   return (
-    <div>
+    <div className='article-reviews-block'>
         <Typography variant='h4'>
             Reviews
         </Typography>

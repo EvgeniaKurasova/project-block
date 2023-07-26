@@ -20,7 +20,7 @@ const FooterVarTwo = (props: Props) => {
                 <h2 className='footer-title-item-two'>Recent Posts</h2>
                 <div className='footer-post-item'>
                     <div className='footer-img-bord'>
-                    <img className='footer-img' src='images/contact-footer-img.jpg'/>
+                    <img className='footer-img' src='..//images/contact-footer-img.jpg'/>
                     </div>
                     <div className='footer-post-item-text'>
                         <div className='footer-post-item-title'>
@@ -33,7 +33,7 @@ const FooterVarTwo = (props: Props) => {
                 </div>
                 <div className='footer-post-item'>
                 <div className='footer-img-bord'>
-                <img className='footer-img' src='images/contact-footer-img2.jpg'/>
+                <img className='footer-img' src='..//images/contact-footer-img2.jpg'/>
                 </div>
                     <div className='footer-post-item-text'>
                         <div className='footer-post-item-title'>
