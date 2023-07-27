@@ -19,8 +19,12 @@ const CategoriesPage = (props: Props) => {
           <div className='categories-title-block-black-line'></div>
           <p className='categories-title-block-p'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </Card>
-      <CategoriesList />
-      <div className='categories-aside-content'></div>
+        <div className='down-content'>
+          <CategoriesList />
+          <div className='categories-aside-content'>
+            <img className='categories-aside-content-img' src='/images/img-side.jpg'/>
+          </div>
+      </div>
       </div>
       </Container>
       <FooterVarTwo/>

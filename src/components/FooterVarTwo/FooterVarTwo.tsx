@@ -32,9 +32,9 @@ const FooterVarTwo = (props: Props) => {
                     </div>
                 </div>
                 <div className='footer-post-item'>
-                <div className='footer-img-bord'>
-                <img className='footer-img' src='..//images/contact-footer-img2.jpg'/>
-                </div>
+                    <div className='footer-img-bord'>
+                        <img className='footer-img' src='..//images/contact-footer-img2.jpg'/>
+                    </div>
                     <div className='footer-post-item-text'>
                         <div className='footer-post-item-title'>
                             7Ways to Make Your Desk Lunch Less Sad

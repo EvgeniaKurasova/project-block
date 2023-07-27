@@ -1,3 +1,34 @@
 .article-reviews-block{
   margin: 40px 100px;
 }
+.reviews-card{
+  padding: 10px;
+  margin: 25px 0px;
+}
+.reviews-name{
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+  font-size: 1.45rem;
+  line-height: 1.4;
+}
+.title-of-add-reviews-block{
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+.add-reviews-button{
+  background-color: #76BC4C;
+  color: white;
+}
+.add-reviews-button:hover{
+  background-color: #4b5767;
+}
+.add-reviews-block{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 80px;
+}
