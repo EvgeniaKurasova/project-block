@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom'
 import './ArticlesPage.scss'
 import React from 'react'
 import Header2 from 'Conteiner/Header2/Header2'
-// import articlesArray, { getArticlesObject, Article } from 'utils/articlesArray'
 import { type Category, categoriesArray } from 'utils/categoriesArray'
 import ArticlesListItem from 'components/ArticlesComponents/ArticlesListItem/ArticlesListItem'
 import { articlesArray } from 'utils/articlesArray'
@@ -34,7 +33,7 @@ const ArticlesPage = () => {
           <div className='categories-title-block-black-line'></div>
           <p className='categories-title-block-p'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
       </Card>
-      <div>
+      <div className='down-content'>
       <Grid container spacing={3} className='categories-list'>
         {articlesFromCategory.map((article) => {
           return (
@@ -53,6 +52,9 @@ const ArticlesPage = () => {
           )
         })}
         </Grid>
+        {/* <div className='categories-aside-content'>
+            <img className='categories-aside-content-img' src='images/img-side.jpg'/>
+        </div> */}
     </div>
     </Container>
     <FooterVarTwo/>
