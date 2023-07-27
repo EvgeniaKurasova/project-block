@@ -6,6 +6,8 @@ import React from 'react'
 import { Card, CardContent, Button } from '@mui/material'
 import { type Category, categoriesArray } from 'utils/categoriesArray'
 import { Link } from 'react-router-dom'
+import { useAppDispatch, useAppSelector } from 'redux/hooks'
+import createLikeAction from 'redux/actions/LikeAction'
 
 interface Props {
   id: number
@@ -24,6 +26,11 @@ const ArticlesListItem = ({ id, buttonTitle, title, author, data, categoryId, bu
       return category.id === categoryId
     }
   ) as Category
+  const isLiked = useAppSelector((state) => state.articlesLikeState.likes[id]) as boolean
+  const dispatch = useAppDispatch()
+  const likeArticle = () => {
+    dispatch(createLikeAction(id))
+  }
   return (
     <Card className='card-article-item' variant="outlined" key={id}>
       <CardContent className="article-card-content">
@@ -31,7 +38,9 @@ const ArticlesListItem = ({ id, buttonTitle, title, author, data, categoryId, bu
         <img className='card-article-img' src={`${bigImgPage}`}/>
         </div>
         <div className='card-article-text-bord'>
-          <img className='card-article-like' src='..//images/like.png'/>
+        <Button onClick={likeArticle} className='card-article-like'>{isLiked
+          ? <img className='card-article-like' src='..//images/like.png'/>
+          : <img className='card-article-like' src='..//images/like-white-border.png'/>}</Button>
         <Button className={`${buttonColor}`}>
             {buttonTitle}
         </Button>
