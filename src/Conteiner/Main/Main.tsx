@@ -24,6 +24,9 @@ const Main = (props: Props) => {
                 <ContentImgLine />
             </Container>
             </div>
+            <div className='big-img-main-block'>
+                <img className='big-img-main' src='images/big-img-main.jpg'/>
+            </div>
         </main>
   )
 }

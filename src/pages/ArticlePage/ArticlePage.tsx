@@ -182,14 +182,14 @@ const ArticlePage = ({
                             }}
                         ></div>
                     </div>
-                    <div className="nutritional-information-p">
+                    {/* <div className="nutritional-information-p">
                         {
                             articlesObject[parseInt(productId)]
                               .nutritionalInformation
                         }
-                    </div>
+                    </div> */}
                 </div>
-                <div className="notes-block">
+                {/* <div className="notes-block">
                     <div
                         className="notes"
                         dangerouslySetInnerHTML={{
@@ -206,7 +206,7 @@ const ArticlePage = ({
                             }}
                         ></div>
                     </div>
-                </div>
+                </div> */}
                 <ArticlesShare />
                 <ArticlesFollowMe />
                 <ArticlesPrev

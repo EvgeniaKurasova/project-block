@@ -410,7 +410,7 @@ const articlesArray: Article[] = [
   {
     id: 14,
     buttonTitle: 'drinks',
-    title: '<div className="p-recipe">Healthy Yogurt Recipes For Breakfast</div>',
+    title: 'Healthy Yogurt Recipes For Breakfast',
     author: 'Laura Nikova',
     data: 'September 6, 2022',
     img: 'images/img16.jpg',

@@ -38,11 +38,13 @@ const ArticlesListItem = ({ id, buttonTitle, title, author, data, categoryId, bu
         <img className='card-article-img' src={`${bigImgPage}`}/>
         </div>
         <div className='card-article-text-bord'>
-        <Button onClick={likeArticle} className='card-article-like'>{isLiked
+        <Button className='card-article-like-button' onClick={likeArticle}>{isLiked
           ? <img className='card-article-like' src='..//images/like.png'/>
           : <img className='card-article-like' src='..//images/like-white-border.png'/>}</Button>
-        <Button className={`${buttonColor}`}>
+        <Button>
+            <Link className={`${buttonColor}`} to={`/categories/${categoryId}`}>
             {buttonTitle}
+            </Link>
         </Button>
         <h1 className="title-article">
           <Link className="title-article" to={`/article/${id}`}>
