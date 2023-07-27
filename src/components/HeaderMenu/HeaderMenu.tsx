@@ -1,5 +1,9 @@
-import './HeaderMenu.css'
+import './HeaderMenu.scss'
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
+import { categoriesArray } from 'utils/categoriesArray'
+// import { type Category } from 'utils/categoriesArray'
+// import { categoriesArray } from 'utils/categoriesArray'
 // import headerArrowDown from 'images/arrow_down.png'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
@@ -9,14 +13,17 @@ const HeaderMenu = (props: Props) => {
   return (
         <div className="HeaderMenuBlock">
             <ul className="HeaderMenu">
-                <li className="HeaderMenuItem">
-                    <a href="/">Home </a>
-
+                <li className="header-menu-item">
+                <NavLink to={'/'}>
+                    Home
+                </NavLink>
                     <div className="line"></div>
                 </li>
-                <li className="HeaderMenuItem HeaderMenuItemDrop">
-                    <div className="HeaderMenuItemArrow">
-                        <a href="/">Categories</a>
+                <li className="header-menu-item header-menu-item-drop">
+                    <div className="header-menu-item-arrow">
+                    <NavLink to={'/categories'}>
+                        Categories
+                    </NavLink>
                         <img
                             alt="arror_down"
                             className="header-arrow-down"
@@ -25,20 +32,30 @@ const HeaderMenu = (props: Props) => {
                     </div>
                     <div className="line"></div>
                     <ul className="subMenu">
-                        <li className="dropMenu">Fast food</li>
-                        <li className="dropMenu">Drinks</li>
-                        <li className="dropMenu">Salads</li>
-                        <li className="dropMenu">Appetizer</li>
-                        <li className="dropMenu">Chicken</li>
-                        <li className="dropMenu">Pizza</li>
+                    {
+                        categoriesArray.map((category) => (
+                            <li className="drop-menu-item" key={category.id}>
+                            <Link to={`/categories/${category.id}`}>{category.title}</Link></li>
+                        ))
+                    }
                     </ul>
                 </li>
-                <li className="HeaderMenuItem">
-                    <a href="/">About us</a>
+                <li className="header-menu-item">
+                <NavLink to={'/about_us'}>
+                    About us
+                </NavLink>
                     <div className="line"></div>
                 </li>
-                <li className="HeaderMenuItem">
-                    <a href="/">Contacts</a>
+                <li className="header-menu-item">
+                    <NavLink to={'/contacts'}>
+                    Contacts
+                    </NavLink>
+                    <div className="line"></div>
+                </li>
+                <li className="header-menu-item">
+                    <NavLink to={'/liked_articles'}>
+                    Liked
+                    </NavLink>
                     <div className="line"></div>
                 </li>
             </ul>
@@ -46,5 +63,3 @@ const HeaderMenu = (props: Props) => {
   )
 }
 export default HeaderMenu
-
-/* <div className='greenLine'></div> */

@@ -1,0 +1,75 @@
+.a-card-img{
+    width: auto;
+    height: 120px;
+    transition: 0.5s;
+    position: absolute;
+    right: -50%;
+}
+.a-card-img:hover{
+    transform: scale(1.2);
+}
+.a-card-img-container{
+    border-radius: 5px;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+.a-img-arrow{
+    width: 15px;
+    height: 15px;
+}
+.a-card-prev{
+    color: #4b5767;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.a-card-title{
+    font-family: Libre Baskerville, sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+    position: relative;
+    display: inline;
+}
+.a-card-title:hover{
+    color: #76BC4C;
+}
+.a-line{
+    font-family: Libre Baskerville, sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+    word-break: break-word;
+}
+.a-line::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #76BC4C;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+}
+.a-line:hover::before{
+    background-color: #76BC4C;
+    transform: scale(1);
+    transition: transform 0.5s;
+    transform-origin: left;
+}
+.article-block-p-n-item{
+    display: flex;
+    gap: 18px;
+    margin: 15px;
+}
+.article-block-p-n-main{
+    display: flex;
+}
+.article-block-p-n{
+    margin: 0px 100px;
+}
+.p-n-button-item-hov-text{
+    width: 180px;
+}

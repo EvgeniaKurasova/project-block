@@ -1,0 +1,67 @@
+.title-of-page-article-block{
+    font-family: Libre Baskerville,sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #191a1b;
+    line-height: 1.4;
+}
+.button-articles-share{
+    display: inline-block;
+    line-height: 1;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    margin: 0 5px;
+    transition: 0.4s;
+    box-shadow: 0 4px 15px #35363e29;
+    width: 43px;
+    height: 43px;
+    min-width: 0px;
+}
+.button-articles-share:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px #35363e5e;
+}
+.face-book{
+    background-color: #3f51b5;
+}
+.twitter{
+    background-color: #2196f3;
+}
+.pinterest{
+    background-color: #e91e54;
+}
+.mail{
+    background-color: #00bcd4;
+}
+.whats-app{
+    background-color: #19b77e;
+}
+.face-book:hover{
+    background-color: #3f51b5;
+}
+.twitter:hover{
+    background-color: #2196f3;
+}
+.pinterest:hover{
+    background-color: #e91e54;
+}
+.mail:hover{
+    background-color: #00bcd4;
+}
+.whats-app:hover{
+    background-color: #19b77e;
+}
+.button-articles-img{
+    width: 23px;
+    height: 23px;
+}
+.article-share{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #dfe1ea;
+    padding: 50px 0px;
+    margin: 0px 100px;
+}

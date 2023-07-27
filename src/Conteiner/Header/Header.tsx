@@ -5,6 +5,7 @@ import logo from 'assets/logo.png'
 import HeaderMenu from 'components/HeaderMenu/HeaderMenu'
 import './Header.scss'
 import React from 'react'
+import Swiper from 'components/Swiper/Swiper'
 
 interface Props {}
 const Header = (props: Props) => {
@@ -15,11 +16,21 @@ const Header = (props: Props) => {
                     <div className="logo">
                         <img src={logo} alt="blog-logo" className="logo-img" />
                     </div>
-                    <HeaderMenu />
+                    <HeaderMenu/>
                 </Container>
             </div>
-            <div className="slider"></div>
+            <Swiper/>
         </header>
   )
 }
+// const Header: React.FunctionComponent = () => {
+//   const heading = () => <h2>
+//     <Slider/>
+//     </h2>
+//   return (
+//       <div>
+//         <Wrapper slider={heading} />
+//       </div>
+//   )
+// }
 export default Header

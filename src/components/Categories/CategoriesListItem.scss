@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+.fast-food{
+    color: white;
+    height: 406px;
+    text-align: center;
+    background-image: linear-gradient(180deg, #00000000 14%, #18181E 65%), url("../../../public/images/img7.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    border: none;
+    background-position: center;
+}
+.drinks{
+    color: white;
+    height: 406px;
+    text-align: center;
+    background-image: linear-gradient(180deg, #00000000 14%, #18181E 65%), url("../../../public/images/contact-footer-img.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px;
+}
+.breakfast{
+    color: white;
+    height: 406px;
+    text-align: center;
+    background-image: linear-gradient(180deg, #00000000 14%, #18181E 65%), url("../../../public/images/img10.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    border: none;
+    background-position: center;
+}
+.appetizer{
+    color: white;
+    height: 406px;
+    text-align: center;
+    background-image: linear-gradient(180deg, #00000000 14%, #18181E 65%), url("../../../public/images/img8.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    border: none;
+    background-position: center;
+}
+.deserts{
+    color: white;
+    height: 406px;
+    text-align: center;
+    background-image: linear-gradient(180deg, #00000000 14%, #18181E 65%), url("../../../public/images/img3.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    border: none;
+    background-position: center;
+}
+.lunch{
+    color: white;
+    height: 406px;
+    text-align: center;
+    background-image: linear-gradient(180deg, #00000000 14%, #18181E 65%), url("../../../public/images/img1.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    border: none;
+    background-position: center;
+}
+.down-block-about{
+    display: flex;
+}
+.title-categories{
+    font-family: 'Libre Baskerville', sans-serif;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+    font-size: 1.45rem;
+    line-height: 1.4;
+    position: relative;
+    display: inline;
+}
+.menu-link::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform 0.25s;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+}
+.menu-link:hover::before{
+    transform: scale(1);
+    transition: transform 0.25s;
+    transform-origin: left;
+}
+.test-d-none{
+    list-style: none;
+}
+.down-block-about{
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    color: #4b5767;
+    margin: 0px;
+    display: flex;
+    gap: 25px;
+    padding: 0px;
+    justify-content: center;
+}
+.categoria-card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    z-index: 25;
+}
+.card-content-img{
+    margin-bottom: 45px;
+    z-index: -25;
+    background-image: linear-gradient(180deg, #00000000 14%, #18181E 65%);
+    background-color: transparent;
+}
+.green{
+    font-family: 'Jost', sans-serif;
+    font-size: 0.80rem;
+    height: 26px;
+    width: auto;
+    padding: 2px 8px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    font-weight: 600;
+    color: white;
+    background-color: #3cc47c;
+    border-radius: none;
+}
+.green:hover{
+    box-shadow: 0px 0px 10px 0px;
+}
+.blue{
+    font-family: 'Jost', sans-serif;
+    font-size: 0.80rem;
+    height: 26px;
+    width: auto;
+    padding: 2px 8px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    font-weight: 600;
+    color: white;
+    background-color: #6290E5;
+    border-radius: none;
+}
+.blue:hover{
+    box-shadow: 0px 0px 10px 0px;
+}
+.orange{
+    font-family: 'Jost', sans-serif;
+    font-size: 0.80rem;
+    height: 26px;
+    width: auto;
+    padding: 2px 8px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    font-weight: 600;
+    color: white;
+    background-color: #E8AA68;
+    border-radius: none;
+}
+.orange:hover{
+    box-shadow: 0px 0px 10px 0px;
+}
+.pink{
+    font-family: 'Jost', sans-serif;
+    font-size: 0.80rem;
+    height: 26px;
+    width: auto;
+    padding: 2px 8px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    font-weight: 600;
+    color: white;
+    background-color: #b6154a;
+    border-radius: none;
+}

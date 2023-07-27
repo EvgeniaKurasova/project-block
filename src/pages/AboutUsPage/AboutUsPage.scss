@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+.about-us-book-p{
+    color: #4b5767;
+    font-size: 1.1rem;
+}
+.about-us-hi-block-text{
+    padding-top: 55px;
+}
+.p{
+    color: #4b5767;
+}
+.title-about-us-page{
+    font-family: Libre Baskerville, sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;;
+    margin-bottom: 10px;
+}
+.title-about-us-page-h3{
+    font-family: Libre Baskerville, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-style: italic;
+    margin: 0px;
+}
+.long-green-line{
+    width: 45px;
+    height: 3px;
+    background-color: #76BC4C;
+    border-radius: 5px;
+}
+.green-line-block-long{
+    background-color: #76BC4C;
+    border-radius: 5px;
+    width: 25px;
+    height: 3px;
+}
+.green-line-block-short{
+    background-color: #76BC4C;
+    border-radius: 5px;
+    width: 10px;
+    height: 3px;
+}
+.green-line-block{
+    display: flex;
+    gap: 6px;
+    margin-bottom: 5px;
+}
+.h3-block{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 15px;
+}
+.about-us-button{
+    background-color: #76BC4C;
+    font-weight: 400;
+    font-family: Roboto, serif;
+}
+.about-us-check-img{
+    width: 20px;
+    height: 20px;
+}
+.about-us-story-check-div{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #76BC4C;
+    text-align: center;
+}
+.about-us-story-check-img{
+    width: 14px;
+    height: 16px;
+}
+.about-us-story-check{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.gray-border{
+    border-left: 4px solid #E9E9E9;
+}
+.flex{
+    display: flex;
+    gap: 18px;
+    width: 100%;
+    margin: 40px 0px;
+}
+.padding15{
+    padding: 15px;
+}
+.margin15{
+    margin: 15px;
+}
+.about-us-line-img{
+    margin-right: 80px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.about-us-img{
+    width: 50%;
+    height: auto;
+}
+.about-us-story-block{
+    width: 100%;
+}
+.about-us-story-block-photo{
+    width: 40%;
+}
+.p-hi{
+    margin-bottom: 38px;
+}
+.about-us-thank-block-ul{
+    margin-top: 45px;
+    font-size: 1.1rem;
+}
+.big-p{
+    font-size: 1.2rem;
+}
+.about-us-story-check-block{
+    margin-top: 35px;
+}

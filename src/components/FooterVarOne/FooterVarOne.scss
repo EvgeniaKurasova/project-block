@@ -1,0 +1,95 @@
+*{
+    font-family: Jost, sans-serif;
+}
+.footer-var-one{
+    max-width: 1440px;
+    width: 100%;
+    height: 472px;
+    background-color: #111213;
+    background-image: url("../../../public/images/Foodbakery-Banner.png");
+}
+.footer-var-one-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-social-button{
+    display: flex;
+    flex-direction: column;
+    width: 115px;
+    height: 110px;
+    padding: 15px 20px;
+    color: white;
+}
+.button-darkblue{
+    background-color: #79adff;
+}
+.button-darkblue:hover{
+    background-color: #79adff;
+}
+.button-violet{
+    background-color: #9E7CF7;
+}
+.button-violet:hover{
+    background-color: #9E7CF7;
+}
+.button-blue{
+    background-color: #74c0f7;
+}
+.button-blue:hover{
+    background-color: #74c0f7;
+}
+.button-red{
+    background-color: #f44f54;
+}
+.button-red:hover{
+    background-color: #f44f54;
+}
+.footer-button-block{
+    display: flex;
+    gap: 15px;
+    margin-top: 100px;
+}
+.footer-logo-img{
+    width: 150px;
+    height: 55px;
+    margin: 40px 0px;
+}
+.footer-down-p{
+    color: #b4b4b4;
+}
+.footer-down-green-line{
+    width: 2px;
+    height: 18px;
+    background-color: #76bc4c;
+}
+.footer-down-text{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.elementor-shape-foot{
+    fill: white;
+    rotate: 0deg;
+}
+.footer-social-img{
+    width: 28.5px;
+    height: 28px;
+    line-height: 1;
+    filter: drop-shadow( 4px 2px 0 #00000020);
+    padding: 4px;
+    transition: 0.4s;
+}
+.footer-social-button:hover{
+    .footer-social-img{
+        transform: translateY(-4px);
+    }
+}
+.footer-social-text{
+    margin-top: 10px;
+    font-family: Jost, sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
