@@ -19,10 +19,12 @@
     width: 100%;
 }
 .content-img-line{
+    max-width: 1440px;
+    width: 100%;
     position: absolute;
     z-index: 2;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 0px;
+    margin-left: 0px;
     right: 0;
     left: 0;
 }
@@ -67,6 +69,7 @@
     gap: 15px;
 }
 .elementor-shape-foot-down{
+    width: 100%;
     transform: rotate(180deg);
     margin-top: 98px;
 }
