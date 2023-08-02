@@ -25,7 +25,7 @@ const ArticlesPage = () => {
   console.log(category.id)
 
   return (
-    <div>
+    <div className='container-block'>
       <Header2/>
       <Container className='container'>
       <Card className='categories-title-block'>

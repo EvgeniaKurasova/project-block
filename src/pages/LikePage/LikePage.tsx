@@ -14,7 +14,7 @@ const LikePage = (props: Props) => {
   const likedArticles = useAppSelector((state) => state.articlesLikeState.likes) as boolean[]
   const articles = articlesArray.filter((article) => likedArticles[article.id])
   return (
-    <div>
+    <div className='container-block'>
         <Header2/>
         <Container className='container'>
         <Card className='categories-title-block'>

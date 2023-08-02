@@ -11,7 +11,7 @@ interface Props {}
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const ContactsPage = (props: Props) => {
   return (
-    <div>
+    <div className='container-block'>
       <Header2/>
       <ContactTitlePart/>
       <ContactChefPart/>

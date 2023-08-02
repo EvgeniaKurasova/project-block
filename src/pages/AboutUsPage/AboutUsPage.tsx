@@ -10,7 +10,7 @@ import { Container, Button } from '@mui/material'
 interface Props {}
 const AboutUsPage = (props: Props) => {
   return (
-    <div>
+    <div className='container-block'>
         <Header2/>
         <Container className='container'>
         <div className='about-us-hi-block flex'>

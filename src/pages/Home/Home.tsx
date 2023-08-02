@@ -9,7 +9,7 @@ interface Props {}
 
 const Home = (props: Props) => {
   return (
-    <div>
+    <div className='container-block'>
         <Header/>
         <Main/>
         <FooterVarOne/>
