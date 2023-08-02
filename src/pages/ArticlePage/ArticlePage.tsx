@@ -60,7 +60,7 @@ const ArticlePage = ({
     if (article.id === idNextArticle) dataNextArticle = article.data
   })
   return (
-        <div>
+        <div className='container-block'>
             <Header2 />
             <div className="block-p-n-button-fix">
               <div className="block-p-n-button">

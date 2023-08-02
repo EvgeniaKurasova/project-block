@@ -10,7 +10,7 @@ import FooterVarTwo from 'components/FooterVarTwo/FooterVarTwo'
 interface Props {}
 const CategoriesPage = (props: Props) => {
   return (
-    <div>
+    <div className='container-block'>
       <Header2 />
       <Container className='container'>
       <div className='categories-all-content'>
